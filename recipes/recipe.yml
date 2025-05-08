@@ -3,10 +3,10 @@
 # image will be published to ghcr.io/<user>/<name>
 name: nicholas-bazzite
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: random bazzite image i made idk
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-deck-gnome
+base-image: ghcr.io/ublue-os/bazzite-deck
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -34,10 +34,16 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
+        - net.waterfox.waterfox
+        - com.visualstudio.code
+        - org.love2d.love2d
+        - com.rustdesk.RustDesk
+        - com.discordapp.Discord
+        - org.vinegarhq.Sober
+        - org.prismlauncher.PrismLauncher
       remove:
         - org.gnome.eog
+        - org.mozilla.firefox
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
