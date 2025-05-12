@@ -45,10 +45,6 @@ modules:
 
   - type: justfiles
 
-  - type: script
-    scripts:
-     - script.sh
-
 
     
 
