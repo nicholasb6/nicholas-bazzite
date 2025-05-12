@@ -41,6 +41,14 @@ modules:
       remove:
         - org.gnome.eog
         - org.mozilla.firefox
+
+  - type: justfiles
+
+  - type: script
+    scripts:
+     - script.sh
+
+
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
