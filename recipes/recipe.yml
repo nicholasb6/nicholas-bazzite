@@ -26,7 +26,7 @@ modules:
       - love
       - konsole
 
-  - type: default-flatpaks
+  - type: default-flatpaks@v1
     notify: false # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
