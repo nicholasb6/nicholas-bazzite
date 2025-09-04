@@ -20,11 +20,18 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - micro
       - starship
       - love
       - konsole
+      - dnf-plugins-core
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
 
   - type: default-flatpaks@v1
     notify: false # Send notification after install/uninstall is finished (true/false)
