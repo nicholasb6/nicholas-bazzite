@@ -25,6 +25,7 @@ modules:
       - starship
       - love
       - konsole
+      - zed
 
   - type: default-flatpaks@v1
     notify: false # Send notification after install/uninstall is finished (true/false)
@@ -32,7 +33,6 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - net.waterfox.waterfox
-        - com.visualstudio.code
         - com.rustdesk.RustDesk
         - com.discordapp.Discord
         - org.vinegarhq.Sober
